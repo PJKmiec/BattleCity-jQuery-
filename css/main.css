@@ -1,0 +1,45 @@
+/* reset
+------------------------------------------------ */
+html, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, header, footer, address,
+p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, div, main,
+a, em, strong, small, s, cite, q, dfn, abbr, data, time, code, var, samp, kbd, sub, sup, i, b, u, mark, ruby, rb, rt, rtc, rp, bdi, bdo, span, br, wbr,
+ins, del,
+img, iframe, embed, object, param, video, audio, source, track, map, area,
+table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th,
+form, label, datalist, optgroup, option, textarea, keygen, output, progress, meter, fieldset, legend {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
+}
+input, button, select {
+    margin:0;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:top;
+}
+
+body {background: #21252b;}
+#container {width: 480px; height: 416px; background: #000; position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0;}
+#map {width: 416px; height: 100%; position: absolute; top: 0px; left: 0px; font: normal 12px/0.35cm Arial, Tahoma, Verdana; color: #fff;}
+#map span {background: #000; position: absolute; top: 32px; left: 0px;}
+#map .grid span {opacity: 0.4;}
+
+#status {width: 64px; height: 100%; background: #646464; position: absolute; top: 0px; left: 416px;}
+#status #enemies {width: 34px; height: 172px; position: absolute; top: 16px; left: 16px;}
+#status #enemies .enemy {width: 17px; height: 17px; background: transparent url('../img/enemy.png') no-repeat top left; float: left;}
+
+#printout {width: 190px; height: 406px; padding: 5px; position: absolute; top: 0px; left: 490px; background: #282c34; color: #abb2bf; font: normal 11px/0.35cm Arial, Tahoma, Verdana; overflow-y : auto;}
+
+#map .grid {width: 32px; height: 32px; float: left;}
+#map .wall {background: #000 url('../img/wall.png') no-repeat center;}
+#map .steel {background: #000 url('../img/steel.png') no-repeat center;}
+#map .eagle {background: #000 url('../img/eagle.png') no-repeat center;}
+
+#map .tank {width: 32px; height: 32px; position: absolute;}
+#map #p1 {background: transparent url('../img/tank-u.png') no-repeat center; top: 384px; left: 128px;}
+#map .tankm-tl {background: transparent url('../img/tankm-d.png') no-repeat center; top: 0px; left: 0px;}
+#map .tankm-tc {background: transparent url('../img/tankm-d.png') no-repeat center; top: 0px; left: 192px;}
+#map .tankm-tr {background: transparent url('../img/tankm-d.png') no-repeat center; top: 0px; left: 384px;}
